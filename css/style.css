@@ -647,11 +647,11 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .modal {
   position: absolute;
@@ -740,8 +740,9 @@ body {
 
 .form-icon {
   position: absolute;
-  top: 8px;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -752,7 +753,7 @@ body {
   padding-left: 38px;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
@@ -768,16 +769,28 @@ body {
   fill: #4d5ae5;
 }
 
+.form-fieldset-textarea {
+  margin-bottom: 16px;
+}
+
 .form-textarea {
   box-sizing: border-box;
 
   padding-left: 16px;
   padding-top: 8px;
-  width: 360px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea::placeholder {
