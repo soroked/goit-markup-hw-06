@@ -527,8 +527,12 @@ body {
   fill: #f4f4fd;
 }
 
-.footer-form {
+.form-container {
   margin-left: 80px;
+}
+
+.footer-form {
+  display: flex;
 }
 
 .footer-form-label {
