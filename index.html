@@ -448,9 +448,22 @@
             ></textarea>
           </div>
 
-          <div class="form-checkbox">
-            <label class="form-label margin-reset">
-              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+          <div class="form-fieldset-checkbox">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="form-label margin-reset" for="user-privacy">
+              <span class="form-custom-checkbox">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-form-checkbox  "></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="user-privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
 
